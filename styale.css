@@ -1,0 +1,361 @@
+.container {
+    font-family: 'Lobster', cursive;
+    background-color:#FFE2D4;
+    text-align: center;
+    
+    
+
+}
+
+
+.sar {color:#ecab7c;
+    letter-spacing: 15px;
+    font-size: 100px;
+    font-weight: 700;
+    padding-top: 5%;
+    text-shadow: 2px 5px 10px rgb(216, 86, 86);
+
+}
+
+button {
+    
+    position: relative;
+    padding: 10px 45px;
+    background: #FEC195;
+    font-size: 17px;
+    font-weight: 500;
+    color: #181818;
+    border: 1px solid #FEC195;
+    border-radius: 8px;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, .2));
+    letter-spacing: 3px;
+}
+
+button:hover {
+    border: 1px solid #f3b182;
+    background: linear-gradient(85deg, #FEC195, #fcc196, #fabd92, #fac097, #fac39c);
+    animation: wind 2s ease-in-out infinite;
+}
+
+@keyframes wind {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    0% {
+        background-position: 50% 100%;
+    }
+
+    0% {
+        background-position: 0% 50%;
+    }
+}
+
+.icon-1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25px;
+    transform-origin: 0 0;
+    transform: rotate(10deg);
+    transition: all .5s ease-in-out;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, .3));
+}
+
+button:hover .icon-1 {
+    animation: slay-1 3s cubic-bezier(0.52, 0, 0.58, 1) infinite;
+    transform: rotate(10deg);
+}
+
+@keyframes slay-1 {
+    0% {
+        transform: rotate(10deg);
+    }
+
+    50% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(10deg);
+    }
+}
+
+.icon-2 {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    width: 12px;
+    transform-origin: 50% 0;
+    transform: rotate(10deg);
+    transition: all 1s ease-in-out;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, .5));
+}
+
+button:hover .icon-2 {
+    animation: slay-2 3s cubic-bezier(0.52, 0, 0.58, 1) 1s infinite;
+    transform: rotate(0);
+}
+
+@keyframes slay-2 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(15deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.icon-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    transform-origin: 50% 0;
+    transform: rotate(-5deg);
+    transition: all 1s ease-in-out;
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, .5));
+}
+
+button:hover .icon-3 {
+    animation: slay-3 2s cubic-bezier(0.52, 0, 0.58, 1) 1s infinite;
+    transform: rotate(0);
+}
+
+@keyframes slay-3 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+
+
+
+
+
+a.contact1{
+    color: #181818;
+    text-decoration: none;
+    font-size: 25px;
+
+
+}
+
+a.contact1:hover{
+    text-shadow: 2px 5px 10px rgb(240, 97, 97);
+    transition: 0.6s;
+}
+
+.loader:hover{
+    text-shadow: 2px 5px 10px rgb(240, 97, 97);
+    transition: 2s ;
+
+}
+
+.loader {
+    position: relative;
+  }
+  
+  .loader span {
+    position: absolute;
+    color: #a77171;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    letter-spacing: 5px;
+  }
+  
+  .loader span:nth-child(1) {
+    color: transparent;
+    -webkit-text-stroke: 0.3px rgb(62, 136, 197);
+  }
+  
+  .loader span:nth-child(2) {
+    color: rgb(34, 52, 66);
+    -webkit-text-stroke: 1px #FBBF94;
+    animation: uiverse723 3s ease-in-out infinite;
+  }
+  
+  @keyframes uiverse723 {
+    0%, 100% {
+      clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 
+       54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+    }
+  
+    50% {
+      clip-path: polygon(0% 60%, 16% 65%, 34% 66%, 
+       51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+    }
+  }
+  
+
+
+  .dots-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .dot {
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+    background-color: #b3d4fc;
+    animation: pulse 2.5s infinite ease-in-out;
+  }
+  
+  .dot:last-child {
+    margin-right: 0;
+  }
+  
+  .dot:nth-child(1) {
+    animation-delay: -0.3s;
+  }
+  
+  .dot:nth-child(2) {
+    animation-delay: -0.1s;
+  }
+  
+  .dot:nth-child(3) {
+    animation-delay: 0.1s;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(0.8);
+      background-color: #fae2e2;
+      box-shadow: 0 0 0 0 rgba(252, 178, 178, 0.7);
+    }
+  
+    50% {
+      transform: scale(1.2);
+      background-color: #fcb3b3;
+      box-shadow: 0 0 0 10px rgba(252, 178, 178, 0);
+    }
+  
+    100% {
+      transform: scale(0.8);
+      background-color: #f7afaf;
+      box-shadow: 0 0 0 0 rgba(252, 178, 178, 0.7);
+    }
+  }
+
+
+  .wena{
+    margin: 20px;
+      box-shadow: 5px 10px 15px #eebfbf, 
+                   -10px -5px 15px rgb(211, 205, 205);
+      border-radius: 10px;
+      border: 1px solid rgb(255, 188, 188);
+      overflow: hidden;
+  }
+
+  .wena:hover{
+    box-shadow: 5px 10px 10px  #643e3e;
+    transition: 2s ease-in;
+  }
+
+   
+
+
+
+
+
+
+
+  
+
+.bala {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  box-shadow: 1px 5px 15px #f08080;
+  border-radius: 50px;
+}
+
+.hexagon-wrapper {
+  margin: auto;
+  display: flex;
+  text-align: initial;
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+  
+}
+
+.hexagon {
+  position: relative;
+  width: 46%;
+  height: 80%;
+  margin: auto;
+  color: white;
+  background: linear-gradient(-180deg, white, #f594a4);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  transition: 0.5s;
+  box-shadow: 1px 5px 15px #f08080;
+}
+
+.hexagon i {
+  z-index: 1;
+  margin: auto;
+  font-size: 50px;
+  color: transparent;
+  background: linear-gradient(45deg, #a58fe9, #e37682);
+  background-clip: text;
+  -webkit-background-clip: text;
+  
+}
+
+.hexagon:before,
+.hexagon:after {
+  position: absolute;
+  content: "";
+  background: inherit;
+  height: 100%;
+  width: 100%;
+  border-radius: 0;
+  transition: 0.5s;
+  transform-origin: center;
+}
+.hexagon:before {
+  transform: rotateZ(60deg);
+}
+.hexagon:after {
+  transform: rotateZ(-60deg);
+}
+.hexagon:hover {
+  border-radius: 50px;
+  transition: 0.5s;
+}
+.hexagon:hover:before {
+  border-radius: 50px;
+  transition: 0.5s;
+  
+}
+.hexagon:hover:after {
+  border-radius: 50px;
+  transition: 0.5s;
+  
+}
+
+
+  
+
+
